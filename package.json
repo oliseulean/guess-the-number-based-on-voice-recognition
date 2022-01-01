@@ -1,0 +1,15 @@
+{
+  "name": "guess_the_number",
+  "version": "1.0.0",
+  "description": "guess the number based on voice recognition",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "yarn": "^1.22.17"
+  }
+}
