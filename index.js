@@ -1,5 +1,5 @@
-import { lowNumbersMap } from "./lowerNumbers.js";
-import { randomNumber } from "./generateRandNumber.js";
+import { lowNumbersMap } from "./helpers/lowerNumbers.js";
+import { randomNumber } from "./helpers/generateRandNumber.js";
 
 const scoreContainer = document.getElementById('bestScore');
 const triesContainer = document.getElementById('tries');
@@ -62,7 +62,7 @@ const checkNumber = value => {
     if (integerValue === randomNumber) {
         document.body.innerHTML = '<h1 class="title">Congrats, you guessed the number </h1>';
         document.body.innerHTML += `<p class="subtitle">Your score is: ${currentScore}</p>`;
-        document.body.innerHTML += "<button id='playButton'>Play again:</button>";
+        document.body.innerHTML += "<button id='playButton'>Play again</button>";
 
         if (bestScore === null || currentScore < bestScore) { // write on the localStorage
             localStorage.setItem("score", currentScore);
@@ -77,7 +77,7 @@ const checkNumber = value => {
 
     if (numberOfTries === currentScore) {
         document.body.innerHTML = '<h1 class="title">I\'m sorry, your tries are over, please play again</h1>';
-        document.body.innerHTML += "<button id='playButton'>Play again:</button>";
+        document.body.innerHTML += "<button id='playButton'>Play again</button>";
     }
 }
 
