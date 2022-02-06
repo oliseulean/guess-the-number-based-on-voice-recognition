@@ -10,5 +10,5 @@
    
  ### PREVIEW ###
  
-  <img src="guess.png" width="500" height="250" alt="Guess the number image"/>
+  <img src="./assets/guess.png" width="500" height="250" alt="Guess the number image"/>
 
